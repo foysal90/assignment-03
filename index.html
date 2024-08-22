@@ -213,7 +213,7 @@
             
               <div class="hero-content w-1/2 md:w-full h-56">
                 <img src="./assets/commercial.png" alt="asset"
-                  class="rounded-lg ml-32 my-20 md:ml-1" />
+                  class="rounded-lg  ml-32 md:ml-1" />
                 <div>
                   <h1 class="text-5xl font-bold">Commercial</h1>
                   <p class="py-6">
@@ -512,28 +512,26 @@
         </section>
 
         <section >
-            <div class="grid: md:flex  justify-center text-center mt-8 gap-5 ">
-                <input class="rounded-2xl w-72 md:w-1/4  h-12 pl-5"  type="text" placeholder="First Name*" class="input input-bordered w-full max-w-xs" />
-                <br>
-                <input class="rounded-2xl  my-2 w-72 md:w-1/4 h-12 pl-5" type="text" placeholder="Last Name*" class="input input-bordered w-full max-w-xs" />
-              </div>
-       
-        <div class="grid: md:flex justify-center mt-5 gap-5 text-center ">
-            <input class="rounded-2xl  w-72 md:w-1/4  h-12 pl-5"  type="text" placeholder="Phone Number*" class="input input-bordered w-full max-w-xs" />
-            <br>
-            <input class="rounded-2xl my-2 w-72 md:w-1/4  h-12 pl-5" type="email" placeholder="Email *" class="input input-bordered w-full max-w-xs" />
-          </div>
+          <div class="grid md:flex  justify-center text-center mt-8 gap-5">
+            <input class="rounded-2xl w-80 md:w-1/4  h-12 pl-5" type="text" name="fname" id="fname" placeholder="First Name*">
+            <input class="rounded-2xl w-80 md:w-1/4  h-12 pl-5" type="text" name="lname" id="lname" placeholder="Last Name*">
+            </div>
+            
+          <div class="grid md:flex  justify-center text-center mt-8 gap-5">
+            <input class="rounded-2xl w-80 md:w-1/4  h-12 pl-5" type="text" name="phone" id="phone" placeholder="Phone Number*">
+            <input class="rounded-2xl w-80 md:w-1/4  h-12 pl-5" type="text" name="email" id="email" placeholder="Email*">
+            </div>
          
           
    
         <div class="text-center">
              <textarea
             placeholder="Write Your Message Here"
-            class="textarea textarea-bordered h-36 my-5 w-72 md:w-1/2 rounded-2xl"></textarea>
+            class="p-5 h-36 my-5 w-80 md:w-1/2 rounded-2xl"></textarea>
         </div>
 
-            <div class="card-actions justify-center">
-                <button class="btn bg-lime-400 h-12 w-72 md:w-1/2 rounded-2xl mb-5">
+            <div class="flex justify-center">
+                <button class="btn bg-lime-400 h-12 w-80 md:w-1/2 rounded-2xl mb-5">
                  Send Email
                   <span class="bg-black text-white rounded-full p-2 ml-2">
                     <svg
@@ -559,9 +557,9 @@
    
     </main>
 
-    <footer class="footer footer-center bg-black text-white">
-      <div class="flex gap-0">
-        <span class="bg-green-500 text-white rounded-full p-2 ml-2">
+    <footer class="text-center p-5 bg-black text-white">
+      <div class="flex justify-center gap-0">
+        <span class="bg-green-500 text-white rounded-full w-10 h-10 pl-2 pt-2 mt-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -577,33 +575,24 @@
             />
           </svg>
         </span>
-        <a class="btn btn-ghost text-xl">Rinterio</a>
+        <a class="btn btn-ghost text-4xl ">Rinterio</a>
       </div>
-      <p class="font-bold">
+      <p class="font-bold my-5">
         The barn house captivates with its blend of rustic charm and modern
         sophistication, <br />
         featuring weathered wood, sleek metal accents.
       </p>
-      <nav class="grid md:grid-flow-col gap-5">
-        <a class="link link-hover">Home</a>
-        <a class="link link-hover">Service</a>
-        <a class="link link-hover">Portfolio</a>
-        <a class="link link-hover">Blogs</a>
-        <a class="link link-hover">Contact Us</a>
+      <nav class="grid gap-5   mb-5 md:flex justify-center md:gap-10">
+        <a >Home</a>
+        <a >Service</a>
+        <a >Portfolio</a>
+        <a >Blogs</a>
+        <a >Contact Us</a>
       </nav>
-      <nav></nav>
-      <!-- <aside >
-                     <button class="btn btn-success px-5 py-2 rounded-2xl  ">
-                        Book Consultant <span class="bg-black text-white rounded-full p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                              </svg>
-                              
-                            </span>
-                     </button>
-                    </aside> -->
-      <aside>
-        <button class="btn btn-success px-5 rounded-2xl -mt-24">
+     
+     
+      <div>
+        <button class="btn btn-success px-5 rounded-2xl mb-8">
           Book Consultant
           <span class="bg-black text-white rounded-full p-2 ml-2">
             <svg
@@ -622,7 +611,9 @@
             </svg>
           </span>
         </button>
-      </aside>
+      </div>
     </footer>
   </body>
 </html>
+
+
